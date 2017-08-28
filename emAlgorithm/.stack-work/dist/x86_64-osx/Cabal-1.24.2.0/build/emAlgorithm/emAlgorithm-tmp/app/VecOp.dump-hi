@@ -1,0 +1,398 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-28 16:00:13.84535 UTC
+
+interface main@main:VecOp 8002
+  interface hash: 63de7a786ca61eda276cb183ef9c2eec
+  ABI hash: 7af06a062a9fc384112b88cca3891eb3
+  export-list hash: 50de2c2f59a053dfc6c8ee02ff7d29e2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 20fc3ed46d8d192c84b8af142def8905
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  VecOp.arrToVec
+  VecOp.likelihood
+  VecOp.makeInitialParams
+  VecOp.makeInitialValue
+  VecOp.normalDist
+  VecOp.updateG
+  VecOp.updateP
+  VecOp.Parameters
+  VecOp.Values{_G _X params}
+module dependencies: Params
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj
+                      integer-gmp-1.0.0.1
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.CG
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Element
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Util
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Vector
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Numeric.Matrix
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Numeric.Vector
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Devel
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Matrix
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Modular
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Numeric
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Float 33e2b9ffe427edd6a5c2fd6a3b26703c
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Algorithms c3ebe8b890398de0d8f253a654dd021d
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Container 7359a68b44bac719e32afee96f1ef774
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Element b3bf2920b27bb2f37d85d6fa85f3d329
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Matrix 3ea60772d2117ce880de2a4fc9c813ab
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Util fc5c61bf6f7ec9c82924c95c5f0b5b81
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Vector ac962c18e89ecb8648be789d33d199ca
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Numeric.LinearAlgebra 6d171625b1516689829014b8650a36d1
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  Params 42ef3122ba47231965da591ceaccbb67
+  exports: 9d4ec3f280bbc5caec664b31ae288788
+  DeltaM a40b977c8e8312cc9706777b7d4f9759
+  Muvec cdccae8adeab7cf1825f32402addb6f3
+  PIvec ed285988a27b4b0658f9f6d6cd69b0a3
+  Xvec c6a5987b5b625fdf493e8e8cd84dffef
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable 20cfd8df64ebd0cfeea3d9f7e246697a
+386ea29cc4c9887f6071ae294ce5f988
+  $fShowParameters :: GHC.Show.Show VecOp.Parameters
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ VecOp.Parameters
+                  VecOp.$fShowParameters_$cshowsPrec
+                  VecOp.$fShowParameters_$cshow
+                  VecOp.$fShowParameters_$cshowList -}
+386ea29cc4c9887f6071ae294ce5f988
+  $fShowParameters1 :: VecOp.Parameters -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ (w :: VecOp.Parameters) ->
+                 case w of ww { VecOp.Parameters ww1 ww2 ww3 ->
+                 VecOp.$w$cshowsPrec 0# ww1 ww2 ww3 }) -}
+386ea29cc4c9887f6071ae294ce5f988
+  $fShowParameters_$cshow :: VecOp.Parameters -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U(U),1*U(U,U,U),U(U,U,U,U,U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: VecOp.Parameters) ->
+                 VecOp.$fShowParameters_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+386ea29cc4c9887f6071ae294ce5f988
+  $fShowParameters_$cshowList :: [VecOp.Parameters] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ VecOp.Parameters
+                   VecOp.$fShowParameters1) -}
+386ea29cc4c9887f6071ae294ce5f988
+  $fShowParameters_$cshowsPrec ::
+    GHC.Types.Int -> VecOp.Parameters -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U(U),1*U(U,U,U),U(U,U,U,U,U,U,U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: VecOp.Parameters) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { VecOp.Parameters ww3 ww4 ww5 ->
+                 VecOp.$w$cshowsPrec ww1 ww3 ww4 ww5 } }) -}
+e751b107626e9229d243104ff828f650
+  $fShowValues :: GHC.Show.Show VecOp.Values
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ VecOp.Values
+                  VecOp.$fShowValues_$cshowsPrec
+                  VecOp.$fShowValues_$cshow
+                  VecOp.$fShowValues_$cshowList -}
+e751b107626e9229d243104ff828f650
+  $fShowValues1 :: VecOp.Values -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: VecOp.Values) (w1 :: GHC.Base.String) ->
+                 case w of ww { VecOp.Values ww1 ww2 ww3 ->
+                 VecOp.$w$cshowsPrec1 0# ww1 ww2 ww3 w1 }) -}
+e751b107626e9229d243104ff828f650
+  $fShowValues_$cshow :: VecOp.Values -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: VecOp.Values) ->
+                 VecOp.$fShowValues_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e751b107626e9229d243104ff828f650
+  $fShowValues_$cshowList :: [VecOp.Values] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ VecOp.Values
+                   VecOp.$fShowValues1) -}
+e751b107626e9229d243104ff828f650
+  $fShowValues_$cshowsPrec ::
+    GHC.Types.Int -> VecOp.Values -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: VecOp.Values)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { VecOp.Values ww3 ww4 ww5 ->
+                 VecOp.$w$cshowsPrec1 ww1 ww3 ww4 ww5 w2 } }) -}
+67dc5de67ae31162a8cc937980128151
+  $tc'Parameters :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16704785147326909799##
+                   9858699536582115656##
+                   VecOp.$trModule
+                   VecOp.$tc'Parameters1) -}
+6c534e9f7468e470dcb2708f1318a5a7
+  $tc'Parameters1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Parameters"#) -}
+71c21d491d768cb5a5f47ea400c8b26a
+  $tc'Values :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9509783133413701172##
+                   8862163556709274340##
+                   VecOp.$trModule
+                   VecOp.$tc'Values1) -}
+1277d3eb48ccd50a5b41d2005cf4db02
+  $tc'Values1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Values"#) -}
+641b37869d0e3a679265730dd6c4c321
+  $tcParameters :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1440076193976791297##
+                   17558769985331664980##
+                   VecOp.$trModule
+                   VecOp.$tcParameters1) -}
+c46939a3297e8b358fde5355e791eee8
+  $tcParameters1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Parameters"#) -}
+879d84f827b3726f213da9c7f6de51ba
+  $tcValues :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18162450282087141084##
+                   11587670712532374351##
+                   VecOp.$trModule
+                   VecOp.$tcValues1) -}
+4e18d26f17fcf261e0de462a43899b19
+  $tcValues1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Values"#) -}
+cc50738076d527af75da162e2de87c56
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module VecOp.$trModule2 VecOp.$trModule1) -}
+02199ae4260921309eac0291cccaea7b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "VecOp"#) -}
+8dd8fa707080075a80373311310946e5
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+bc47d45f6eafc203f422c85a2544b15e
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Params.PIvec -> Params.Muvec -> Params.DeltaM -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <S,U><L,1*U(U)><L,1*U(U,U,U)><L,U(U,U,U,U,U,U,U)>,
+     Inline: [0] -}
+c10a5936dc8c5fc060948aeb6ba86002
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> [Params.Xvec]
+    -> [[GHC.Types.Double]]
+    -> [VecOp.Parameters]
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 5, Strictness: <S,U><L,1*U><L,1*U><L,1*U><L,U>,
+     Inline: [0] -}
+d48822c8e246eec7f7593821b364d523
+  $wlikelihood ::
+    [Params.Xvec] -> [VecOp.Parameters] -> GHC.Prim.Double#
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+2b9386dea7e95ac8ffc06b36c1cb7c33
+  $wnormalDist ::
+    GHC.Integer.Type.Integer
+    -> Params.Xvec -> Params.Muvec -> Params.DeltaM -> GHC.Prim.Double#
+  {- Arity: 4,
+     Strictness: <S,1*U><L,1*U(1*U,U,U)><L,1*U(U,U,U)><L,U(U,U,U,U,U,U,U)>,
+     Inline: [0] -}
+f86585955a7ecc1b5e7d6229a4c51aa6
+  $wupdateG ::
+    [Params.Xvec] -> [VecOp.Parameters] -> [[GHC.Types.Double]]
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+72d9a55b688365c9a7e7c3e940eadc88
+  $wupdateP :: GHC.Prim.Int# -> VecOp.Values -> [VecOp.Parameters]
+  {- Arity: 2, Strictness: <S,U><L,U(U,U,A)>, Inline: [0] -}
+386ea29cc4c9887f6071ae294ce5f988
+  data Parameters
+    = Parameters {pi_ :: Params.PIvec,
+                  mu_ :: Params.Muvec,
+                  delta_ :: Params.DeltaM}
+e751b107626e9229d243104ff828f650
+  data Values
+    = Values {_X :: [Params.Xvec],
+              _G :: [[GHC.Types.Double]],
+              params :: [VecOp.Parameters]}
+e45bca16945e083d7ecb0a198f15b6b3
+  _G :: VecOp.Values -> [[GHC.Types.Double]]
+  RecSel Left VecOp.Values
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: VecOp.Values) ->
+                 case ds of wild { VecOp.Values ds1 ds2 ds3 -> ds2 }) -}
+55585f6fd93ad4ab0a72d270bc4be4c7
+  _X :: VecOp.Values -> [Params.Xvec]
+  RecSel Left VecOp.Values
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: VecOp.Values) ->
+                 case ds of wild { VecOp.Values ds1 ds2 ds3 -> ds1 }) -}
+7ce1a78d24386519de1e1ac7934cef31
+  arrToVec ::
+    [GHC.Types.Double] -> Data.Vector.Storable.Vector Internal.Vector.R
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True) Internal.Util.vector -}
+e6750039e8e873dab2186273b7964916
+  delta_ :: VecOp.Parameters -> Params.DeltaM
+  RecSel Left VecOp.Parameters
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS),1*U(A,A,1*U(U,U,U,U,U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: VecOp.Parameters) ->
+                 case ds of wild { VecOp.Parameters ds1 ds2 ds3 -> ds3 }) -}
+7d4c8abde19d4bea5d4396f79dec4f81
+  likelihood ::
+    [Params.Xvec] -> [VecOp.Parameters] -> GHC.Types.Double
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: [Params.Xvec]) (w1 :: [VecOp.Parameters]) ->
+                 case VecOp.$wlikelihood w w1 of ww { DEFAULT ->
+                 GHC.Types.D# ww }) -}
+4f66461eff81ecb84940873ba1782902
+  makeInitialParams :: GHC.Integer.Type.Integer -> [VecOp.Parameters]
+  {- Arity: 1, Strictness: <S,U> -}
+773e89070af7856aa02c43afbde0ffce
+  makeInitialValue :: [Params.Xvec] -> VecOp.Values
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [Params.Xvec]) ->
+                 VecOp.Values x VecOp.makeInitialValue3 VecOp.makeInitialValue1) -}
+46eab76cc158efa36e01d93291f9a82a
+  makeInitialValue1 :: [VecOp.Parameters]
+  {- Unfolding: (VecOp.makeInitialParams VecOp.makeInitialValue2) -}
+34b86e8b41199271e1c39cb0b6b697f9
+  makeInitialValue2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+d8d0303e5de7b7a77034d5d3e9bc7cfa
+  makeInitialValue3 :: [[GHC.Types.Double]]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Double]
+                   (GHC.Types.[] @ GHC.Types.Double)
+                   (GHC.Types.[] @ [GHC.Types.Double])) -}
+8f55d10999149051b85fc55a9e6e068e
+  mu_ :: VecOp.Parameters -> Params.Muvec
+  RecSel Left VecOp.Parameters
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSL),1*U(A,1*U(U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: VecOp.Parameters) ->
+                 case ds of wild { VecOp.Parameters ds1 ds2 ds3 -> ds2 }) -}
+898a13b6c0d9f1e1de12b0a4c11c8fd1
+  normalDist ::
+    GHC.Integer.Type.Integer
+    -> Params.Xvec -> Params.Muvec -> Params.DeltaM -> GHC.Types.Double
+  {- Arity: 4,
+     Strictness: <S,1*U><L,1*U(1*U,U,U)><L,1*U(U,U,U)><L,U(U,U,U,U,U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: GHC.Integer.Type.Integer)
+                   (w1 :: Params.Xvec)
+                   (w2 :: Params.Muvec)
+                   (w3 :: Params.DeltaM) ->
+                 case VecOp.$wnormalDist w w1 w2 w3 of ww { DEFAULT ->
+                 GHC.Types.D# ww }) -}
+2a953ba3a796f88f7d9522039974f519
+  params :: VecOp.Values -> [VecOp.Parameters]
+  RecSel Left VecOp.Values
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: VecOp.Values) ->
+                 case ds of wild { VecOp.Values ds1 ds2 ds3 -> ds3 }) -}
+29aa58f3bff9daff4e5b4cfecc9f7289
+  pi_ :: VecOp.Parameters -> Params.PIvec
+  RecSel Left VecOp.Parameters
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: VecOp.Parameters) ->
+                 case ds of wild { VecOp.Parameters ds1 ds2 ds3 -> ds1 }) -}
+d205fc6cad479acfacc7e9ff4a1db37f
+  updateG :: VecOp.Values -> [[GHC.Types.Double]]
+  {- Arity: 1, Strictness: <S(SLL),1*U(1*U,A,U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: VecOp.Values) ->
+                 case w of ww { VecOp.Values ww1 ww2 ww3 ->
+                 VecOp.$wupdateG ww1 ww3 }) -}
+156bd169146f67adc4160555677795e9
+  updateP :: GHC.Types.Int -> VecOp.Values -> [VecOp.Parameters]
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,U(U,U,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: VecOp.Values) ->
+                 case w of ww { GHC.Types.I# ww1 -> VecOp.$wupdateP ww1 w1 }) -}
+instance GHC.Show.Show [VecOp.Parameters] = VecOp.$fShowParameters
+instance GHC.Show.Show [VecOp.Values] = VecOp.$fShowValues
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

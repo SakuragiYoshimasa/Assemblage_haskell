@@ -1,0 +1,19 @@
+Preprocessing library hmatrix-0.18.0.0...
+[ 2 of 27] Compiling Internal.Devel   ( src/Internal/Devel.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/Devel.o )
+[ 3 of 27] Compiling Internal.Vectorized ( src/Internal/Vectorized.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/Vectorized.o ) [Internal.Devel changed]
+[ 4 of 27] Compiling Internal.Matrix  ( src/Internal/Matrix.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/Matrix.o ) [Internal.Devel changed]
+[ 5 of 27] Compiling Internal.IO      ( src/Internal/IO.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/IO.o ) [Internal.Matrix changed]
+[ 6 of 27] Compiling Internal.ST      ( src/Internal/ST.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/ST.o ) [Internal.Matrix changed]
+[ 7 of 27] Compiling Internal.Element ( src/Internal/Element.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/Element.o ) [Internal.Matrix changed]
+[ 8 of 27] Compiling Internal.Conversion ( src/Internal/Conversion.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/Conversion.o ) [Internal.Matrix changed]
+[ 9 of 27] Compiling Internal.LAPACK  ( src/Internal/LAPACK.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/LAPACK.o ) [Internal.Conversion changed]
+[10 of 27] Compiling Internal.Numeric ( src/Internal/Numeric.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/Numeric.o ) [Internal.Conversion changed]
+[11 of 27] Compiling Internal.Sparse  ( src/Internal/Sparse.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/Sparse.o ) [Internal.Devel changed]
+[12 of 27] Compiling Numeric.LinearAlgebra.Devel ( src/Numeric/LinearAlgebra/Devel.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Numeric/LinearAlgebra/Devel.o ) [Internal.Devel changed]
+[13 of 27] Compiling Numeric.Vector   ( src/Numeric/Vector.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Numeric/Vector.o ) [Internal.Numeric changed]
+[14 of 27] Compiling Internal.Chain   ( src/Internal/Chain.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Internal/Chain.o ) [Internal.Numeric changed]
+[15 of 27] Compiling Numeric.Matrix   ( src/Numeric/Matrix.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Numeric/Matrix.o ) [Internal.Chain changed]
+ld: warning: directory not found for option '-L/opt/local/lib/'
+Installing library in
+/Users/yoshimasasakuragi/Documents/Haskell/emAlgorithm/.stack-work/install/x86_64-osx/lts-9.0/8.0.2/lib/x86_64-osx-ghc-8.0.2/hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj
+Registering hmatrix-0.18.0.0...

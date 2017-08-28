@@ -1,0 +1,8 @@
+Configuring mecab-0.4.0...
+Preprocessing library mecab-0.4.0...
+MeCab.hsc:59:10: fatal error: 'mecab.h' file not found
+#include <mecab.h>
+         ^
+1 error generated.
+compiling .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/MeCab_hsc_make.c failed (exit code 1)
+command was: /usr/bin/gcc -c .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/MeCab_hsc_make.c -o .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/MeCab_hsc_make.o -m64 -fno-stack-protector -m64 -fno-stack-protector -m64 -D__GLASGOW_HASKELL__=800 -Ddarwin_BUILD_OS=1 -Dx86_64_BUILD_ARCH=1 -Ddarwin_HOST_OS=1 -Dx86_64_HOST_ARCH=1 -I.stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/autogen -include .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/autogen/cabal_macros.h -I/Users/yoshimasasakuragi/.stack/programs/x86_64-osx/ghc-8.0.2/lib/ghc-8.0.2/bytestring-0.10.8.1/include -I/Users/yoshimasasakuragi/.stack/programs/x86_64-osx/ghc-8.0.2/lib/ghc-8.0.2/base-4.9.1.0/include -I/Users/yoshimasasakuragi/.stack/programs/x86_64-osx/ghc-8.0.2/lib/ghc-8.0.2/integer-gmp-1.0.0.1/include -I/Users/yoshimasasakuragi/.stack/programs/x86_64-osx/ghc-8.0.2/lib/ghc-8.0.2/include -I/Users/yoshimasasakuragi/.stack/programs/x86_64-osx/ghc-8.0.2/lib/ghc-8.0.2/include/

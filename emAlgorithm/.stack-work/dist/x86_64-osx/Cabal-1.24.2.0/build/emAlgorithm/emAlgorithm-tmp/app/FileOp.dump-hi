@@ -1,0 +1,103 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-28 14:53:07.460981 UTC
+
+interface main@main:FileOp 8002
+  interface hash: 36d317ee4756140be967314f5ce6a0b6
+  ABI hash: 00c8cc1e6322036a4ec5244dd352ccbe
+  export-list hash: f8d18b30ee7f471cb2599283739b27a6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 20fc3ed46d8d192c84b8af142def8905
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  FileOp.csv2vec
+module dependencies: Params VecOp
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj
+                      integer-gmp-1.0.0.1
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.CG
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Element
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Util
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Vector
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Numeric.Matrix
+         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Numeric.Vector
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Devel
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Matrix
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Modular
+                         hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Internal.Numeric
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:Text.Read 75c59863e882ebaec4532e9465e2ee9b
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  hmatrix-0.18.0.0@hmatrix-0.18.0.0-LGKm3fIBRZO9Qs5hltonpj:Numeric.LinearAlgebra 6d171625b1516689829014b8650a36d1
+import  -/  Params 42ef3122ba47231965da591ceaccbb67
+  exports: 9d4ec3f280bbc5caec664b31ae288788
+  Xvec c6a5987b5b625fdf493e8e8cd84dffef
+import  -/  VecOp 7845b43ed0f6231aac48598d87d32161
+  exports: 50de2c2f59a053dfc6c8ee02ff7d29e2
+  arrToVec 7ce1a78d24386519de1e1ac7934cef31
+4b810c28355c6b3636a57bf07a90a01f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   FileOp.$trModule2
+                   FileOp.$trModule1) -}
+6aad6f20083370d14cf39db840ba9094
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "FileOp"#) -}
+875297730c06508189107479ea862b4b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+84364fea8521f39fd603624a02ed2752
+  csv2list :: GHC.Base.String -> [GHC.Types.Double]
+  {- Arity: 1, Strictness: <S,1*U> -}
+1e54e3ea68a575de527b2b7eb4bea9c5
+  csv2vec :: GHC.Base.String -> Params.Xvec
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: GHC.Base.String) ->
+                 Internal.Util.vector (FileOp.csv2list x)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
